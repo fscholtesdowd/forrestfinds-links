@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forrest Finds Poster: Connect</title>
+<style>body{font-family:system-ui,sans-serif;max-width:720px;margin:40px auto;padding:0 16px;line-height:1.6;color:#26301f;background:#f4f6ef}@media (prefers-color-scheme: dark){body{color:#e8ecdf;background:#161a12}}</style>
+</head><body><h1>Forrest Finds Poster</h1>
+<p>A small tool that posts Forrest's own short videos to his own TikTok accounts, one a day.</p>
+<p><b>Step 1.</b> Connect a TikTok account. TikTok will ask you to allow access.</p>
+<p><a id="go" href="#" style="display:inline-block;background:#fe2c55;color:#fff;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:700">Connect with TikTok</a></p>
+<p><b>Step 2.</b> Copy the code TikTok gives you into the poster on the owner's computer, then pick a video, the caption and who can see it.</p>
+<p><a href="terms.html">Terms of Service</a> &middot; <a href="privacy.html">Privacy Policy</a> &middot; <a href="./">Back to Forrest Finds</a></p>
+<script>
+document.getElementById('go').onclick=function(e){e.preventDefault();
+var s=Math.random().toString(36).slice(2);
+var q=new URLSearchParams({client_key:"sbawdr4306litw7a6x",scope:'user.info.basic,video.upload,video.publish',response_type:'code',redirect_uri:'https://fscholtesdowd.github.io/forrestfinds-links/tiktok-callback.html',state:s});
+location.href='https://www.tiktok.com/v2/auth/authorize/?'+q.toString();};
+</script>
+</body></html>
